@@ -1,0 +1,16 @@
+
+[Unit]
+Description=XBee Service
+After=multi-user.target
+[Service]
+Type=idle
+User=pi
+ExecStart=/usr/bin/python2 /home/pi/Desktop/pro_end.py
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=multi-user.target
+
+
+
